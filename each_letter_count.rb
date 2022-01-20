@@ -10,7 +10,8 @@ user_word = gets.chomp
 user_word = user_word.split("")
 
 user_word.each do |the_word|
-  p user_word
+  num_times = user_word.count(the_word)
+  p the_word.to_s + " appears " + num_times.to_s + " times"
 end
 
 
